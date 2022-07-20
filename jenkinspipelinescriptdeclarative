@@ -2,7 +2,7 @@ pipeline{
     agent any
     
     parameters {
-  choice choices: ['master', 'development', 'qa', 'prod', 'test'], description: 'select a branch name', name: 'branchName'
+  choice choices: ['development', 'master', 'qa', 'prod', 'test'], description: 'select a branch name', name: 'branchName'
 }
     
     tools{
